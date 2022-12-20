@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+@media print {
+  html,
+  body {
+    width: 842px;
+    height: 595px;
+  }
+
+  body {
+    zoom: 133%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, "sans-serif";
+}
+
+.wrapper {
+  width: 842px;
+  height: 595px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 800px;
+  border: 1px dashed black;
+  height: 547px;
+  display: flex;
+}
+
+.card section {
+  width: calc(800px / 2);
+  height: 100%;
+}
+
+.card section.first,
+.card section.second {
+  padding: 13px 8px;
+}
+
+.card section.second {
+  border-left: 1px dashed black;
+}
+
+.saraswati-logo {
+  width: 100%;
+  height: 79px;
+  border: 1.9px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.identity {
+  width: 100%;
+  height: 93px;
+  border: 1.9px solid #dadada;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.identity ul li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.7em;
+}
+.address {
+  padding-left: 21px;
+  font-size: 12px;
+  border: 1.9px solid #dadada;
+  height: 79px;
+  display: flex;
+  padding-top: 8px;
+  margin-bottom: 7px;
+}
+
+.address-details {
+  width: 288px;
+  height: 53px;
+  margin-left: 19px;
+}
+
+.photo-schedule {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.photo {
+  width: 112px;
+  height: 166px;
+  background-color: #dadada;
+  background-position: center;
+  background-size: cover;
+}
+
+.schedule {
+  width: 264px;
+  height: 166px;
+  border: 1.9px solid #dadada;
+  padding: 0px 6px;
+}
+table {
+  margin: auto;
+  font-size: 9px;
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 2px 7px;
+}
+
+table th {
+  border-bottom: 1px solid #dadada;
+  padding: 5px 0px;
+}
+
+table tr td {
+  padding: 5px 0;
+}
+
+table tr td:nth-child(1) {
+  background-color: red;
+}
+
+.statement-wrapper {
+  width: 100%;
+  height: 79px;
+  border: 1.9px solid #dadada;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.statement-content {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.qr-code {
+  background-color: #dadada;
+  width: 65px;
+  height: 100%;
+}
+
+.statement {
+  width: 293px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.statement p:nth-child(1) {
+  font-size: 6.5px;
+}
+.statement p:nth-child(2) {
+  font-size: 7.5px;
+}
+
+.study-program {
+  border: 1.9px solid #dadada;
+  height: 93px;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 11px;
+  margin-bottom: 17px;
+}
+
+.study-program p {
+  margin-bottom: 7px;
+}
+
+.exam-location {
+  width: 100%;
+  padding: 0 11px;
+  height: 248px;
+  border: 1.9px solid #dadada;
+  font-size: 12px;
+  padding-top: 11px;
+  margin-bottom: 22px;
+}
+
+.box-ujian {
+  display: flex;
+}
+
+.box-ujian p,
+.lokasi-ujian {
+  width: calc(388px / 2.3);
+}
+
+.requirement {
+  width: 100%;
+  padding: 0 11px;
+  height: 108px;
+  border: 1.9px solid #dadada;
+  font-size: 12px;
+  padding-top: 11px;
+}
+
+.requirement p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul li {
+  list-style: none;
+}

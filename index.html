@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <section class="first">
+          <div class="saraswati-logo">
+            <img src="logo.png" width="363px" />
+          </div>
+          <div class="identity">
+            <ul>
+              <li>Nomor Peserta</li>
+              <li>Nama Peserta</li>
+              <li>Kelompok Ujian</li>
+              <li>Asal Sekolah</li>
+            </ul>
+            <ul style="margin-left: 10px">
+              <li>: Gautama</li>
+              <li>: Halo</li>
+              <li>: 10</li>
+              <li>: SMK Negeri 1 Denpasar</li>
+            </ul>
+          </div>
+          <div class="address">
+            <p>Alamat :</p>
+            <div class="address-details">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laboriosam, facilis quidem explicabo doloremque commodi
+                aperiam aliquid inventore accusamus id?
+              </p>
+            </div>
+          </div>
+          <div class="photo-schedule">
+            <div class="photo"></div>
+            <div class="schedule">
+              <table>
+                <tr>
+                  <th width="20%">Hari/Tanggal</th>
+                  <th width="30%">WIB</th>
+                  <th width="50%">Kegiatan</th>
+                </tr>
+                <tr>
+                  <td>Senin 14 Desember 2022</td>
+                  <td>08.00 - 10.00</td>
+                  <td>UJIAN TERTULIS</td>
+                </tr>
+                <tr>
+                  <td>Jumat 20 Desember 2022</td>
+                  <td>08.00 - 10.00</td>
+                  <td>UJIAN KETERAMPILAN</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="statement-wrapper">
+            <div class="statement-content">
+              <div class="statement">
+                <p>
+                  DENGAN INI SAYA MENYATAKAN BAHWA DATA YANG SAYA ISIKAN DALAM BORANG PENDAFTARAN ONLINE UNIVERSITAS TABANAN TAHUN 2022
+                  ADALAH BENAR. SAYA BERSEDIA MENERMA SANKSI PEMBATALAN PENERIMAAN DI PTN YANG SAYA PILIH APABILA MELANGGAR PERNYATAAN INI.
+                </p>
+                <p>TANDA TANGAN DAN NAMA TERANG : ___________________________________________</p>
+              </div>
+              <div class="qr-code"></div>
+            </div>
+          </div>
+        </section>
+        <section class="second">
+          <div class="study-program">
+            <p>PILIHAN PROGRAM STUDI</p>
+            <ul>
+              <li>1. TEKNIK INFORMATIKA</li>
+              <li>2. DESAIN KOMUNIKASI VISUAL</li>
+              <li>3. SISTEM INFORMASI</li>
+            </ul>
+          </div>
+          <div class="exam-location">
+            <p style="font-weight: bold; margin-bottom: 10px">LOKASI UJIAN</p>
+            <div class="box-ujian">
+              <p>UJIAN TERTULIS :</p>
+              <p class="lokasi-ujian">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure quae non ab eos excepturi ex maxime in illo alias.
+              </p>
+            </div>
+            <div class="box-ujian" style="margin-top: 10px">
+              <p>UJIAN KETERAMPILAN :</p>
+              <p class="lokasi-ujian">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iure quae non ab eos excepturi ex maxime in illo alias.
+              </p>
+            </div>
+          </div>
+          <div class="requirement">
+            <p>PERLENGKAPAN YANG HARUS DIBAWA</p>
+            <ul>
+              <li>1. Kartu tanda peserta ini</li>
+              <li>2. Fotokopi ijazah yang telah di legalisasi atau tanda lulus asli</li>
+              <li>3. Alat tulis secukupnya</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <button class="print-button">🖶 PRINT</button>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="printThis.js"></script>
+    <script>
+      $(".wrapper").printThis();
+
+      $(".print-button").click(function () {
+        $(".wrapper").printThis();
+      });
+    </script>
+  </body>
+</html>
