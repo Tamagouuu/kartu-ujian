@@ -14,6 +14,10 @@
   body {
     zoom: 133%;
   }
+
+  .print-button {
+    display: none;
+  }
 }
 
 * {
