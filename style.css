@@ -9,6 +9,10 @@
   body {
     width: 842px;
     height: 595px;
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   body {
